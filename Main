@@ -1,0 +1,35 @@
+
+package lat;
+
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+public class Main {
+public static void main(String args[]){
+
+ArrayList<String> hewan = new ArrayList<String>();
+LinkedList<String> DeleteHewan = new LinkedList<String>();
+
+hewan.add("Sapi");
+hewan.add("Kelinci");
+hewan.add("Kambing");
+hewan.add("Unta");
+hewan.add("Domba");
+
+System.out.println("Hewan : " + hewan);
+
+DeleteHewan.add("Kelinci");
+DeleteHewan.add("Kambing");
+DeleteHewan.add("Unta");
+
+System.out.println("Hewan yang dihapus : " + DeleteHewan);
+
+hewan.remove("Kelinci");
+hewan.remove("Kambing");
+hewan.remove("Unta");
+
+System.out.println("Hewan setelah dihapus : " + hewan);
+}
+}
